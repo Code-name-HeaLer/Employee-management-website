@@ -1,102 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Management System</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width :772px)" href="phone.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-    <div class="content-placeholder">
-        <div class="skeleton-header"></div>
-        <div class="skeleton-body"></div>
-        <div class="skeleton-footer"></div>
-    </div>
-    
-    <div class="actual-content" style="display: none;">
-        <nav id="navbar">
-            <div id="image">
-                <img src="image/logo-pmec.png" alt="pmec logo">
-            </div>
-        </nav>
-    
-        <section id="allContent">
-            <h1 class="h-primary center">Indian income tax slab structure</h1>
-            <div id="line"></div>
-            <!-- <div class="container"> -->
-            <div id="box-container">
-                <div class="boxes">
-                    <div class="vertical-line"></div>
-                    <h2 class="h-secondary center">For Individual Taxpayers (Below 60 years of age):</h2>
-                    <ol>
-                        <li>Income up to ₹2,50,000: No tax</li>
-                        <li>Income from ₹2,50,001 to ₹5,00,000: 5% of income exceeding ₹2,50,000</li>
-                        <li>Income from ₹5,00,001 to ₹10,00,000: ₹12,500 + 20% of income exceeding ₹5,00,000</li>
-                        <li>Income above ₹10,00,000: ₹1,12,500 + 30% of income exceeding ₹10,00,000</li>
-                    </ol>
-                </div>
-                <div class="boxes">
-                    <div class="vertical-line"></div>
-                    <h2 class="h-secondary center">For Senior Citizens (60 years and above but below 80 years):</h2>
-                    <ol>
-                        <li>Income up to ₹3,00,000: No tax</li>
-                        <li>Income from ₹3,00,001 to ₹5,00,000: 5% of income exceeding ₹3,00,000</li>
-                        <li>Income from ₹5,00,001 to ₹10,00,000: ₹10,000 + 20% of income exceeding ₹5,00,000</li>
-                        <li>Income above ₹10,00,000: ₹1,10,000 + 30% of income exceeding ₹10,00,000</li>
-                    </ol>
-                </div>
-                <div class="boxes">
-                    <div class="vertical-line"></div>
-                    <h2 class="h-secondary center">For Super Senior Citizens (80 years and above):</h2>
-                    <ol>
-                        <li>Income up to ₹5,00,000: No tax</li>
-                        <li>Income from ₹5,00,001 to ₹10,00,000: 20% of income exceeding ₹5,00,000</li>
-                        <li>Income above ₹10,00,000: ₹1,00,000 + 30% of income exceeding ₹10,00,000</li>
-                    </ol>
-                </div>
-            </div>
-            <!-- </div> -->
-        </section>
-    
-        <section id="form-container">
-            <h1 class="h-primary center">Input Details</h1>
-            <form action="#" id="form">
-                <div>
-                    <label for="name">Name : </label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div>
-                    <label for="gender">Gender : </label>
-                    male <input type="radio" name="gender" class="gender" >
-                    female <input type="radio" name="gender" class="gender" >
-                    other <input type="radio" name="gender" class="gender" >
-                </div>
-                <div>
-                    <label for="">Age : </label>
-                    <input type="number" name="age" id="age1" required>
-                </div>
-                <div>
-                    <label for="">Salary : </label>
-                    <input type="number" name="salary" id="salary" required>
-                </div>
-                <div id="buttons">
-                    <input type="submit" value="Submit" id="submit">
-                    <input type="reset" value="Reset" id="reset">
-                </div>
-            </form>
-            <div id="display">
-                <img src="image/cross.png" alt="cross" id="cross">
-                <p id="para" class="center">You are <span id="age2"></span> years old and your salary is <span id="salary1"></span> / anum.</p>
-                <p id="realSalary" class="center">Your salary after taxes is <span id="salary2"></span> / anum</p>
-            </div>
-        </section>
-    
-    </div>
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    <form id="login-form" action="employee.html">
+      <input type="username" name="username" id="username-field" class="login-form-field" placeholder="Username"
+        required>
+      <input type="password" name="password" id="password" class="login-form-field" placeholder="Password" required>
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
 
-
-
-    <script src="script.js"></script>
+  </main>
 </body>
+
 </html>
